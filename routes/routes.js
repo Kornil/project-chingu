@@ -30,7 +30,7 @@ module.exports = function (app) {
     }
   })
 
-  app.get(process.env.SECRET_LINK, function(req, res) {
+  app.get('/asdasd/asd', function(req, res) {
       res.render('register');
   });
 

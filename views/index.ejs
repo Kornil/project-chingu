@@ -7,18 +7,23 @@
     
     <% include ./partials/nav %>
 
-    <div class="jumbotron" id="starter-jumbo">
-      <h1><b>LEARN MORE<br> FEEL LESS FRUSTRATED<br> GET THE JOB</b></h1>
-      <h3>Web-dev gyms for those of us who don't have the money/time for expensive coding bootcamps.</h3>
-    </div>
-
     <div class="container">
-
-      <div class="section" id="cohort-title">
-        <h1>- COHORTS -</h1>
-        <h4>To apply: simply fill out this <a href="http://bit.ly/2kpcSC0">PLACEMENT SURVEY</a>. If you have any questions, please feel free to send an email at<br><b>CHINGUFTW@GMAIL.COM</b></h4>
+      
+      <div class="call-to-action row">
+        <div class="col col-md-8">
+          <h1><b><span class="yellow">LEARN</span> MORE<br> <span class="yellow">FEEL</span> LESS FRUSTRATED<br> <span class="yellow">GET</span> THE JOB</b></h1>
+        </div>
+        <div class="col col-md-4 call-right">
+          <h4>Web-dev gyms for those of us who don't have the money/time for expensive coding bootcamps.</h4>
+        </div>
       </div>
 
+      <div class="row cohorts-row">
+      <div class="section col col-md-3" id="cohort-title">
+        <h3>Cohorts</h3>
+        <h4>To apply: simply fill out this <a href="http://bit.ly/2kpcSC0">PLACEMENT SURVEY</a>. If you have any questions, please feel free to send an email at<br><b>CHINGUFTW@GMAIL.COM</b></h4>
+      </div>
+      <div class="col col-md-9 cohorts-list">
       <% for(var i=cohorts.length-1; i >= 0; i--) { %>
           <div class="thumbnail" style="background-image: url(<%= cohorts[i].image %>);">
             <% if (typeof user !== "undefined") { %>
@@ -38,25 +43,9 @@
             </div>
           </div>
         <% } %>
-
-    </div><!-- /.container -->
-
-    <div id="updateModal" class="modal fade" role="dialog" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modify Cohort</h4>
-          </div>
-          <div class="modal-body">
-            <form id="updateForm" method="post" >
-              <input class="form-control" type="text" name="space" placeholder="Space Available" />
-              <input class="btn btn-success" type="submit" value="Submit" />
-            </form>
-          </div>
-        </div>
       </div>
-    </div>
+      </div>
+    </div><!-- /.container -->
 
     <div class="section" id="cohort-about">
       <div class="container">
@@ -93,6 +82,25 @@
         <h5>Copyright © CHINGU 2017</h5>
       </div>
     </footer>
+
+    <% if(typeof user !== "undefined") { %>
+    <div id="updateModal" class="modal fade" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modify Cohort</h4>
+          </div>
+          <div class="modal-body">
+            <form id="updateForm" method="post" >
+              <input class="form-control" type="text" name="space" placeholder="Space Available" />
+              <input class="btn btn-success" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
 
     <script>
       $(document).ready(function(){
