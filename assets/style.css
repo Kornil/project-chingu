@@ -6,6 +6,18 @@ body {
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
 }
+::-moz-selection { 
+  background: var(--primeColor);
+}
+::selection { 
+  background: var(--primeColor); 
+}
+.yellow::selection {
+  color: #fff;
+}
+.yellow::-moz-selection {
+  color: #fff;
+}
 
 /* navbar */
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
@@ -63,14 +75,12 @@ body {
 .yellow {
   color: var(--primeColor);
 }
-p {
-  font-size: 12px;
-}
 .call-to-action {
   padding-top: 25px;
+  margin-bottom: 45px;
 }
 .call-to-action h1 {
-  font-size: 3.5em;
+  font-size: 4.5em;
 }
 .call-right {
   border-left: 2.5px solid var(--primeColor);
@@ -86,11 +96,10 @@ p {
  background: #d4e5f1;
 }
 .cohorts-row {
-  margin-top: 65px;
+  margin-top: 35px;
 }
 .cohorts-list {
-  overflow-x: scroll;
-  white-space: nowrap;
+  overflow-x: auto;
 }
 .section {
   margin-bottom: 25px;
@@ -176,4 +185,33 @@ p {
   height: 190px;
   float: none;
   margin: 50px auto 0;
+}
+
+.card {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  float: none;
+  width: 33%;
+  position:relative;
+}
+.card img {
+  padding: 5px;
+  float:left;
+}
+.card h2 {
+  margin-top: 5px;
+}
+.desc{
+  padding: 15px;
+  padding-top: 0;
+}
+#sea {  
+  background: #03A9F4;
+}
+#sky {
+  background: #1abc9c;
+}
+#land {
+  background: #8BC34A;
 }

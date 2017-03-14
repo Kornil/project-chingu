@@ -18,13 +18,15 @@
         </div>
       </div>
 
+      <h3>We put motivated people with similar goals together in an environment that gives them the opportunity to level-up in a way they couldn't otherwise. Friendships, level ups and hijinks ensue. The FCC chatrooms are great, but for the more shy (like me) they can be a bit chaotic and intimidating. This project aims to create more of a bootcamp style community</h3>
+
       <div class="row cohorts-row" id="cohorts-container">
       <div class="section col col-md-3" id="cohort-title">
         <h3>Cohorts</h3>
         <h4>To apply: simply fill out this <a href="http://bit.ly/2kpcSC0">PLACEMENT SURVEY</a>. If you have any questions, please feel free to send an email at<br><b>CHINGUFTW@GMAIL.COM</b></h4>
       </div>
       <div class="col col-md-9 cohorts-list">
-      <% for(var i=cohorts.length-1; i >= 0; i--) { %>
+      <!--<% for(var i=cohorts.length-1; i >= 0; i--) { %>
           <div class="thumbnail" style="background-image: url(<%= cohorts[i].image %>);">
             <% if (typeof user !== "undefined") { %>
             <i id="<%= cohorts[i]._id %>" class="fa fa-times" aria-hidden="true"></i>
@@ -42,7 +44,42 @@
               <p> space: <%= cohorts[i].space %> </p>
             </div>
           </div>
-        <% } %>
+        <% } %>-->
+
+<div class="card" id="sea">
+  <span class="title-div">
+  <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/penguin/favicon-32x32.png" />
+  <h2>Penguin</h2>
+  </span>
+  <div class="desc">
+    <p><b>#back-end #full-time</b></p>
+    <p>description is that this penguin comes from the artic everyone loves him and stuff</p>
+    <button class="btn btn-danger btn-sm">space: full</button>
+  </div>
+</div>
+<div class="card" id="land">
+  <span class="title-div">
+  <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/red-panda/favicon-32x32.png" />
+  <h2>Red Panda</h2>
+  </span>
+  <div class="desc">
+    <p><b>#front-end #part-time</b></p>
+    <p>description is that this red panda comes from the artic everyone loves him and stuff</p>
+    <button class="btn btn-success btn-sm">space: 53</button>
+  </div>
+</div>
+<div class="card" id="sky">
+  <span class="title-div">
+  <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/flamingo/favicon-32x32.png" />
+  <h2>Flamingo</h2>
+  </span>
+  <div class="desc">
+    <p><b>#front-end #part-time</b></p>
+    <p>description is that this flamingo comes from the artic everyone loves him and stuff</p>
+    <button class="btn btn-success btn-sm">space: 53</button>
+  </div>
+</div>
+
       </div>
       </div>
 
