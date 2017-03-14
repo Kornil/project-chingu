@@ -6,10 +6,35 @@ body {
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
 }
+
+/* navbar */
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  color: var(--primeColor);
+}
+.navbar-inverse {
+  font-weight: bold;
+  background: inherit;
+  border: 0;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #333;
+  text-decoration: none;
+  box-shadow: inset 0 -3px 0 0 var(--primeColor);
+}
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+  padding: 15px 0;
+  margin: 0 10px;
+}
+.navbar-inverse .navbar-brand:focus #logo-it, .navbar-inverse .navbar-brand:hover #logo-it,
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: #333;
+}
+/* end navbar style */
+
 .thumbnail {
   display: inline-block;
   float: none;
-  width: 25%;
+  width: 33%;
   height: 200px;
   position: relative;
   background-size: cover;
@@ -37,24 +62,6 @@ body {
 }
 .yellow {
   color: var(--primeColor);
-}
-.navbar-inverse {
-  font-weight: bold;
-  background: inherit;
-  border: 0;
-}
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-  color: #333;
-  text-decoration: none;
-  box-shadow: inset 0 -3px 0 0 var(--primeColor);
-}
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
-  padding: 15px 0;
-  margin: 0 10px;
-}
-.navbar-inverse .navbar-brand:focus #logo-it, .navbar-inverse .navbar-brand:hover #logo-it,
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
-  color: #333;
 }
 p {
   font-size: 12px;
