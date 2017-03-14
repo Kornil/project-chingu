@@ -30,9 +30,9 @@ module.exports = function (app) {
     }
   })
 
-  app.get('/asdasd/asd', function(req, res) {
+  /*app.get('/asdasd/asd', function(req, res) {
       res.render('register');
-  });
+  });*/
 
   app.delete('/chingu/:id', function(req, res){
     if(typeof req.user !== "undefined"){
