@@ -76,9 +76,17 @@ p {
   border-left: 2.5px solid var(--primeColor);
   margin-top: 15px;
 }
+#cohorts-container {
+  background: #fcf3cf;
+}
+#projects-container {
+ background: #d3eedf;
+}
+#testimonials-container {
+ background: #d4e5f1;
+}
 .cohorts-row {
   margin-top: 65px;
-  background: #fcf3cf;
 }
 .cohorts-list {
   overflow-x: scroll;
