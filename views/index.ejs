@@ -9,119 +9,124 @@
 
     <div class="container">
       
+      <!-- call to action -->
       <div class="call-to-action row">
-        <div class="col col-md-8">
+        <div class="col-md-8">
           <h1><b><span class="yellow">LEARN</span> MORE<br> <span class="yellow">FEEL</span> LESS FRUSTRATED<br> <span class="yellow">GET</span> THE JOB</b></h1>
         </div>
-        <div class="col col-md-4 call-right">
+        <div class="col-md-4 call-right">
           <h4>Chingu is a global collaboration platform and coding-cohort generator. We connect motivated learners with shared goals to learn, help and build together.</h4>
         </div>
       </div>
-
-      <!--<h3>To apply: simply fill out this <a href="http://bit.ly/2kpcSC0">PLACEMENT SURVEY</a>. If you have any questions, please feel free to send an email at<br><b>CHINGUFTW@GMAIL.COM</b></h3>-->
-
+      
+      <!-- cohorts container -->
       <div class="row cohorts-row" id="cohorts-container">
-        <div class="section col col-md-3">
+        <div class="section col-md-3">
           <h3>The Chingu Project</h3>
           <h4>Simple explanation + <a href="http://bit.ly/2kpcSC0">Survey Link</a>.</h4>
         </div>
-        <div class="col col-md-9 cohorts-list">
-      <!--<% for(var i=cohorts.length-1; i >= 0; i--) { %>
-          <div class="thumbnail" style="background-image: url(<%= cohorts[i].image %>);">
-            <% if (typeof user !== "undefined") { %>
-            <i id="<%= cohorts[i]._id %>" class="fa fa-times" aria-hidden="true"></i>
-            <a class="update" data-toggle="modal" data-target="#updateModal" id="<%= cohorts[i]._id %>">
-              <i id="<%= cohorts[i]._id %>" class="fa fa-cog" aria-hidden="true"></i>
-            </a>
-            <% } %>
-            <div class="title">
-              <h3> <%= cohorts[i].name %> </h3>
-            </div>
-            <div class="description">
-              <h4> <%= cohorts[i].description %> </h4>
-            </div>
-            <div class="space">
-              <p> space: <%= cohorts[i].space %> </p>
+
+          <div class="col-md-3 card" id="sea">
+            <span class="title-div">
+            <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/penguin/favicon-32x32.png" />
+            <h2>Penguin</h2>
+            </span>
+            <div class="desc">
+              <p><b>#back-end<br>
+              #part-time #full-time</b></p>
+              <p>No one knows what these guys do, we grouped every weird dev in the sea animals cohorts.</p>
+              <button class="btn btn-danger btn-sm">space: full</button>
             </div>
           </div>
-        <% } %>-->
-
-<div class="card" id="sea">
-  <span class="title-div">
-  <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/penguin/favicon-32x32.png" />
-  <h2>Penguin</h2>
-  </span>
-  <div class="desc">
-    <p><b>#back-end<br>
-    #part-time #full-time</b></p>
-    <p>No one knows what these guys do, we grouped every weird dev in the sea animals cohorts.</p>
-    <button class="btn btn-danger btn-sm">space: full</button>
-  </div>
-</div>
-<div class="card" id="land">
-  <span class="title-div">
-  <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/red-panda/favicon-32x32.png" />
-  <h2>Red Panda</h2>
-  </span>
-  <div class="desc">
-    <p><b>#front-end<br>
-    #part-time #full-time</b></p>
-    <p>Love playing with material design colors? Join the land animals cohorts to find devs like you.</p>
-    <button class="btn btn-success btn-sm">space: 53</button>
-  </div>
-</div>
-<div class="card" id="sky">
-  <span class="title-div">
-  <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/flamingo/favicon-32x32.png" />
-  <h2>Flamingo</h2>
-  </span>
-  <div class="desc">
-    <p><b>#machine-learning<br>
-    #full-time</b></p>
-    <p>Wanna build the androids from Blade Runner? The flying animals cohorts are the place for you.</p>
-    <button class="btn btn-success btn-sm">space: 53</button>
-  </div>
-</div>
+          <div class="col-md-3 card" id="land">
+            <span class="title-div">
+            <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/red-panda/favicon-32x32.png" />
+            <h2>Red Panda</h2>
+            </span>
+            <div class="desc">
+              <p><b>#front-end<br>
+              #part-time #full-time</b></p>
+              <p>Love playing with material design colors? Join the land animals cohorts to find devs like you.</p>
+              <button class="btn btn-success btn-sm">space: 53</button>
+            </div>
+          </div>
+          <div class="col-md-3 card" id="sky">
+            <span class="title-div">
+            <img src="https://raw.githubusercontent.com/Kornil/Chingu-Animal-Icons/master/animals/flamingo/favicon-32x32.png" />
+            <h2>Flamingo</h2>
+            </span>
+            <div class="desc">
+              <p><b>#machine-learning<br>
+              #full-time</b></p>
+              <p>Wanna build the androids from Blade Runner? The flying animals cohorts are the place for you.</p>
+              <button class="btn btn-success btn-sm">space: 53</button>
+            </div>
+          </div>
 
       </div>
-      </div>
 
-      <div class="row cohorts-row" id="projects-container">
-        <div class="section col col-md-3" id="cohort-title">
+      <!-- projects container -->
+      <div class="row second-row" id="projects-container">
+        <div class="section col-md-3" id="cohort-title">
           <h3>Featured projects</h3>
           <h4>To apply: simply fill out this <a href="http://bit.ly/2kpcSC0">PLACEMENT SURVEY</a>. If you have any questions, please feel free to send an email at<br><b>CHINGUFTW@GMAIL.COM</b></h4>
         </div>
-        <div class="col col-md-9 cohorts-list">
-          <div class="thumbnail"></div>
-          <div class="thumbnail"></div>
-          <div class="thumbnail"></div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+
+          </div>
         </div>
       </div>
 
-      <div class="row cohorts-row" id="testimonials-container">
-        <div class="section col col-md-3" id="cohort-title">
+      <!-- testimonials container -->
+      <div class="row second-row" id="testimonials-container">
+        <div class="section col-md-3" id="cohort-title">
           <h3>Testimonials</h3>
           <h4>To apply: simply fill out this <a href="http://bit.ly/2kpcSC0">PLACEMENT SURVEY</a>. If you have any questions, please feel free to send an email at<br><b>CHINGUFTW@GMAIL.COM</b></h4>
         </div>
-        <div class="col col-md-9 cohorts-list">
-          <div class="thumbnail"></div>
-          <div class="thumbnail"></div>
-          <div class="thumbnail"></div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <p style="font-style: italic;">
+              I really love Chingu it helped me fighting against the react guys! long live angular!
+            </p>            
+            <h4 style="font-weight: 700; margin-top: 10px;float:right;">John from TechCrunch
+            <img src="assets/twitterpixel.png" width="16px" height="16px" /></h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            
+          </div>
         </div>
       </div>
 
-    </div><!-- /.container -->
+    </div>
 
     <div class="section" id="cohort-about">
       <div class="container">
         <h1>- ABOUT -</h1>
         <div class="row">
 
-          <div class="col col-md-6 desc-section-l">
+          <div class="col-md-6 desc-section-l">
             <h4>Here is what we do: put motivated people with similar goals together in an environment that gives them the opportunity to level-up in a way they couldn't otherwise. Friendships, level ups and hijinks ensue. The FCC chatrooms are great, but for the more shy (like me) they can be a bit chaotic and intimidating. This project aims to create more of a bootcamp style community</h4>
           </div>
 
-          <div class="col col-md-6 desc-section-r">
+          <div class="col-md-6 desc-section-r">
             <h4>How it works is you send an email to chinguftw@gmail I'll get my messenger-pigeon to send you a Placement Survey within a few days. So if you're serious about learning to code, feel free to pick a cohort and join this experiment. If you have any questions or ideas, let's chat!</h4>
           </div>
 
@@ -129,6 +134,7 @@
       </div>
     </div>
 
+    <!-- donation div -->
     <div class="container">
       <div class="row">
         <div class="donation-div col-md-8 col-md-offset-2">
@@ -137,72 +143,22 @@
           It takes many hours to coordinate, facilitate and make these cohorts what they are, as well as funds to sustain.
           So if you found your cohort experience valuable and want to support Chingu's existence, any amount is much appreciated.</h4>
           <div class="text-center">
-            <button class="btn btn-default donation-button">One time donation</button>
+            <form style="margin:25px 0;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="KBJ9E8DUWJVL2">
+              <button name="submit" class="btn btn-default donation-button">One time donation</button>
+            </form>
             <button class="btn btn-default donation-button">Monthly donation</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section" id="cohort-contact">
-
-      <h1>- CONTACT -</h1>
-      <h4><b>CHINGUFTW@HOTMAIL.COM</b></h4>
-      <form style="margin:25px 0;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="KBJ9E8DUWJVL2">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
-      </form>
-
-    </div>
-
-    <footer id="footer" class="navbar navbar-inverse">
+    <!--<footer id="footer" class="navbar navbar-inverse">
       <div class="container" style="text-align:center;">
         <h5>Copyright © CHINGU 2017</h5>
       </div>
-    </footer>
-
-    <% if(typeof user !== "undefined") { %>
-    <div id="updateModal" class="modal fade" role="dialog" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modify Cohort</h4>
-          </div>
-          <div class="modal-body">
-            <form id="updateForm" method="post" >
-              <input class="form-control" type="text" name="space" placeholder="Space Available" />
-              <input class="btn btn-success" type="submit" value="Submit" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <% } %>
-
-    <script>
-      $(document).ready(function(){
-
-        $('.fa-times').on('click', function(){
-          var id = $(this).attr('id');
-          $.ajax({
-            url: '/chingu/'+id,
-            type: 'DELETE',
-            complete: function(){
-              window.location.reload(true);
-            }
-          });
-        });
-
-        $('.update[data-toggle=modal]').click(function () {
-          var cohort_id = $(this).attr('id');
-          $('#updateForm').attr("action", "/chingu/"+cohort_id);
-        })
-      })
-
-    </script>
+    </footer>-->
 
   </body>
 </html>
