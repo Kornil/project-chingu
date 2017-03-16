@@ -3,8 +3,7 @@
 }
 body {
   padding-top: 50px;
-  /*font-family: 'Montserrat', sans-serif;*/
-  font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 ::-moz-selection { 
   background: var(--primeColor);
@@ -17,9 +16,6 @@ body {
 }
 .yellow::-moz-selection {
   color: #fff;
-}
-p {
-  font-size: 1.2em;
 }
 
 /* navbar */
@@ -47,7 +43,7 @@ p {
 /* end navbar style */
 
 .thumbnail {
-  height: 175px;
+  height: 140px;
   margin-top: 50px;
   border-radius: 0;
   padding: 12px;
@@ -66,7 +62,7 @@ p {
   border-left: 2.5px solid var(--primeColor);
   margin-top: 15px;
 }
-.call-right h4 {  
+.call-right p {  
   font-weight: 700;
 }
 #cohorts-container {
@@ -84,9 +80,6 @@ p {
 .second-row{
   margin-top: 35px;
   padding: 0 15px;
-}
-.cohorts-list {
-  overflow-x: auto;
 }
 .section {
   margin-bottom: 25px;
